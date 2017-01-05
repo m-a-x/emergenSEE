@@ -1,0 +1,7 @@
+imageio==1.6
+pandas
+numpy
+matplotlib
+descartes
+shapely
+scikit-learn

@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+emergenSEE/__init__.py
+emergenSEE.egg-info/PKG-INFO
+emergenSEE.egg-info/SOURCES.txt
+emergenSEE.egg-info/dependency_links.txt
+emergenSEE.egg-info/requires.txt
+emergenSEE.egg-info/top_level.txt
