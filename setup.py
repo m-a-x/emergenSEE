@@ -1,8 +1,8 @@
-from setuptools import setup, find_packages
+from distutils.core import setup
+
 setup(
   name = 'emergenSEE',
   packages = ['emergenSEE'], # this must be the same as the name above
-  include_package_data=True,
   version = '0.1',
   description = 'Visualize NYC EMS Emergencies',
   author = 'Max Mattioli',
@@ -17,6 +17,6 @@ setup(
                     'matplotlib',
                     'descartes',
                     'shapely',
-                    'scikit-learn'
-                      ],
+                    'scikit-learn',
+                      ]
 )
