@@ -11,12 +11,4 @@ setup(
   download_url = 'https://github.com/m-a-x/emergenSEE/tarball/0.1',
   license='MIT',
   classifiers = [],
-  install_requires=['imageio==1.6',
-                    'pandas',
-                    'numpy',
-                    'matplotlib',
-                    'descartes',
-                    'shapely',
-                    'scikit-learn',
-                      ]
 )
