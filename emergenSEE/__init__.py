@@ -146,7 +146,8 @@ def _plot_data(zip_counts, freq, graphlabel, output_path):
             counts.append(count)
 
         cmap_norm = colors.Normalize(vmin=min_incident, vmax=max_incident)
-        p = PatchCollection(geoms, cmap=cm, alpha=.8, norm=cmap_norm)
+        p = PatchCollection(geoms, cmap=cm, alpha=.9, norm=cmap_norm, edge)
+        p.set_edgecolor('k')
         p.set_array(np.array(counts))
         cax = ax.add_collection(p)
         ax.set_xlim([min_x*.999, max_x*1.001])
