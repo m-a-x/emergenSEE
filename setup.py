@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'emergenSEE',
   packages = ['emergenSEE'],
-  version = '0.8',
+  version = '0.9.3',
   description = 'Visualize NYC EMS Emergencies',
   author = 'Max Mattioli',
   author_email = 'm.max@columbia.edu',
