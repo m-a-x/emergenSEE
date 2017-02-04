@@ -23,7 +23,7 @@ def _load_zip_geometry(shape_fn='ZIP_CODE_040114.shp'):
         path = os.path.join(_ROOT, 'data', 'zip_shapes.pkl')
         zip_geometry = joblib.load(path)#'data/zip_shapes.pkl')
     except:
-        print 'missing zip_shapes.pkl, please redownload package'
+        print('missing zip_shapes.pkl, please redownload package')
     return zip_geometry
 
 
@@ -178,7 +178,7 @@ def make_gif(freq, borough='all', call_description=None, graphlabel=None,
         path = os.path.join(_ROOT, 'data', freq + '_data_dic.pkl')
         data_dic = joblib.load(path)
     except:
-        print 'freq must be set to either:\nhourly\nweekly'
+        print('freq must be set to either:\nhourly\nweekly')
         return
     if type(call_description) == list:
         multi_call_data = []
