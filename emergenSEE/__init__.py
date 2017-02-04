@@ -11,7 +11,7 @@ import glob
 import imageio
 import os
 
-_ROOT = os.path.abspath(os.dirname(__file__))
+_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 def _get_list_of_dir_contents(path):
     pathz = glob.glob(os.path.join(path, '*'))
