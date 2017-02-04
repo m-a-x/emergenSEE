@@ -11,6 +11,7 @@ import glob
 import imageio
 import os
 
+_ROOT = os.path.abspath(os.dirname(__file__))
 
 def _get_list_of_dir_contents(path):
     pathz = glob.glob(os.path.join(path, '*'))
@@ -19,7 +20,8 @@ def _get_list_of_dir_contents(path):
 
 def _load_zip_geometry(shape_fn='ZIP_CODE_040114.shp'):
     try:
-        zip_geometry = joblib.load('data/zip_shapes.pkl')
+        path = os.path.join(_ROOT, 'data', 'zip_shapes.pkl')
+        zip_geometry = joblib.load(path)#'data/zip_shapes.pkl')
     except:
         print 'missing zip_shapes.pkl, please redownload package'
     return zip_geometry
@@ -173,7 +175,8 @@ def make_gif(freq, borough='all', call_description=None, graphlabel=None,
         graphlabel = _generate_graphlabel(call_description)
     output_path = _get_output_path(borough, freq, graphlabel)
     try:
-        data_dic = joblib.load('data/' + freq + '_data_dic.pkl')
+        path = os.path.join(_ROOT, 'data', freq + '_data_dic.pkl')
+        data_dic = joblib.load(path)
     except:
         print 'freq must be set to either:\nhourly\nweekly'
         return
