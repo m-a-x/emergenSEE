@@ -1,2 +1,2 @@
-Visualize NYC EMS emergencies with a cleverly named package.
+Visualize NYC EMS emergencies with this ingeniously-named package.
 
