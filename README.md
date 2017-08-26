@@ -1,3 +1,5 @@
+chose to make a package inspired by an open ended datavis assignment in a Big Data with Python course.
+
 Visualize NYC EMS emergencies with gifs and images created with one line in this ingeniously-named package. Follow 
 
 Slice by:
